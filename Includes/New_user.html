@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <title>New admin user</title> 
+<style>
+    .entry {
+        margin: 0%;
+        padding: 0%;
+
+    }
+    .entry-data {
+        margin: 1px;
+        padding: 2px;
+    }
+
+    #firstname {
+        width: 250px;
+       
+    }
+</style>
+
+</head>
+
+<!--This can only be accessed by someone already in the system-->
+
+
+
+<div class="entry">
+<form>
+
+    <div class="entry-data">
+    <label for="firstname">firstname</label>
+    <input type="text" id="firstname" name="firstname" required>
+</div>
+
+<div class="entry-data">
+    <label for="Surname">Surname</label>
+    <input type="text" id="Surname" name="surname" required>
+
+</div>
+
+<div class="entry-data">
+    <label for="firstname">Username</label>
+    <input type="text" id="user_name" name="user_name" required>
+</div>
+
+<div class="entry-data">
+    <label for="passwd">Password</label>
+    <input type="password" id="passwd" min="5" name="passwd" required>
+</div>
+
+<div class="entry-data">
+    <label for="firstname">Re-ente the password</label>
+    <input type="password" id="confirmPasswd" min="5" name="confirmPasswd" required>
+</div>
+
+<input class="btn btn-primary" type="submit" value="Add" name="add">
+
+</form>
+
+
+</div>
+
+</html>
