@@ -65,6 +65,10 @@ public function add_user($user,$pass){
     $hash = password_hash($pass,PASSWORD_DEFAULT);
     $stat = "insert into Logs(username,password)
             values($user,$hash);";
+    try {
+        $this->exec($stat);
+    }
+    
     
 }
 
